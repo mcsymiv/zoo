@@ -12,7 +12,7 @@ namespace ZooApp
         public void Start()
         {
             ShowCountVisitors();
-            //Visitor visitor = new Visitor();
+            Visitor visitor = new Visitor();
             visitor.isAdult = AskAge();
             zoo.DisplayPrice(visitor.isAdult);
             AskAnimalList(visitor);
