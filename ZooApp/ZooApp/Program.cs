@@ -6,10 +6,11 @@ namespace ZooApp
     {
         static void Main(string[] args)
         {
-            TicketWindow menuchka = new TicketWindow();
-            while (menuchka.ShowCountVisitors() < 5)
+            Console.WriteLine("This is zoo app");
+            TicketWindow menu = new TicketWindow();
+            while (menu.ShowCountVisitors() < 5)
             {
-                menuchka.Start();
+                menu.Start();
                 Console.Clear();
             };
 
